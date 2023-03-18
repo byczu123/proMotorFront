@@ -1,113 +1,192 @@
-:root{
+:root {
   --main_font: 'Josefin Sans', sans-serif;
 }
-body{
+
+body {
   font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #2a2c2e;
 
 }
 
+body::after {
+  content: "";
+  display: block;
+  height: 0;
+  /* 1:2 ratio */
+  transform: translateZ(0);
+}
+
+
 nav {
-    width: 100%;
-    background-color: #333;
-    height: 50px;
+  width: 100%;
+  background-color: #333;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 60%;
-    margin-left: 20%;
-    display: flex;
-    justify-content: space-between;
-  }
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
-  
-  .logotype {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-  }
-  
-  .logotype img {
-    width: 50%;
-    height: 50%;
-    object-fit:scale-down;
-  }
-  .background{
-    background-image: url("../static/image.png");
-    max-height: 600px;
-    background-repeat:no-repeat;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    height: 70vh;
-  }
-  .App{
-    background-color: #bbbbbb;
-  }
-  
-  .oNas{
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  .about{
-    margin-left: 10px;
-  }
-  .oNas img{
-    width: 40vw;
-  }
-  
-  .projekty{
-    height: 500px;
-    border: solid 2px;
-  }
-  .faculty_img{
-    max-width: 250px;
+nav ul {
+  max-width: 1920px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+}
 
-  }
-  .sponsor_img{
-    max-width: 250px;
+nav li {
+  transition: all 0.3s ease;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
-  }
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  .fb{
-    text-align: center;
-  }
-  footer{
-    width: 100%;
-    box-sizing: border-box; 
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
-  footer i {
-    font-size: 50px;
-  }
+nav li:hover {
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #111;
+}
+
+nav li a:hover {
+  color: #dd9933;
+}
+
+.logotype {
+  background-image: url("../static/image.png");
+  background-repeat: no-repeat;
+  background-color: #202529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
+  max-height: 627px;
+}
+
+.logotype img {
+  width: auto;
+  height: 50%;
+  max-height: 320px;
+}
+
+.background {
+  background-image: url("../static/image.png");
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  width: 1920;
+  height: auto;
+}
+.about_container{
+  background-color: #202529;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Ustawienie szerokości kontenera */
+/* Dostosowanie marginesów */
+.about {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Dostosowanie rozmiaru tekstu */
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  justify-self: center;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Dostosowanie elementów w listach */
+.about li:before {
+  content: "\2022";
+  margin-right: 10px;
+}
+.about img{
+  justify-self: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 30vw;
+  max-width: 460px;
+}
+
+.image-wrapper{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.image-wrapper h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.faculty_img {
+  max-width: 250px;
+
+}
+
+.sponsor_img {
+  max-width: 250px;
+
+}
+
+.fb {
+  text-align: center;
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+.footer i {
+  font-size: 50px;
+}
+.address_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.address_container i{
+  margin: 0.5rem;
+}
