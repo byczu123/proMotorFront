@@ -69,7 +69,7 @@ nav li a:hover {
 .contact_wrapper{
   align-items: center;
   height: 90vh;
-  max-height: 650px;
+  max-height: 700px;
   min-height: 650px;
   background-color: white;
   display: flex;
@@ -78,9 +78,9 @@ nav li a:hover {
 .contact_container{
   align-items: center;
   border: 1px solid rgb(216, 216, 216);
-  height: 70vh;
+  height: 80vh;
   width: 70vw;
-  max-height: 412px;
+  max-height: 500px;
   max-width: 1075px;
   min-height: 412px;
 
