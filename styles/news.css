@@ -4,6 +4,7 @@
 body{
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
+  
 }
 
 
@@ -82,4 +83,42 @@ nav li a:hover {
   }
   .address_container i{
     margin: 0.5rem;
+  }
+
+  .article-card {
+    width: 80%;
+    border: 1px solid #333;
+    margin: 20px;
+    display: grid;
+  }
+
+  .article-summary {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .article-details {
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+  }
+
+  .article-details p {
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .news{
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .article-card img{
+    justify-content: center;
+    
+    
   }

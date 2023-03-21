@@ -89,3 +89,25 @@ nav li a:hover {
 .address_container i {
   margin: 0.5rem;
 }
+
+.image-wrapper{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  
+}
+.image-wrapper h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.faculty_img {
+  max-width: 250px;
+
+}
+
+.sponsor_img {
+  max-width: 250px;
+
+}
