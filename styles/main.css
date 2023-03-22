@@ -135,4 +135,8 @@
       display:inline-block;
       width: 70%;
     }
+    .articles p img{
+      display: block;
+      width: auto;
+    }
   }
