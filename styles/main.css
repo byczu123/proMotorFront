@@ -15,7 +15,7 @@
     top:0;
     z-index: 1;
     width: 100%;
-    background-color: #333;
+    background-color: #757575;
     height: 50px;
     margin: 0;
     padding: 0;
@@ -64,7 +64,7 @@
     box-sizing: border-box;
     border: 1px solid black;
     padding: 1em;
-    background-color: #333;
+    background-color: #757575;
     color: white;
     
   }
@@ -82,6 +82,11 @@
   
   .address_container i {
     margin: 0.5rem;
+  }
+
+  .address_container span{
+    text-align: left;
+    margin-right: auto;
   }
   
 
