@@ -71,6 +71,7 @@
   
   .footer i {
     font-size: 50px;
+    text-align: center;
   }
   
   .address_container {
@@ -85,8 +86,7 @@
   }
 
   .address_container span{
-    text-align: left;
-    margin-right: auto;
+    text-align: center;
   }
   
 
