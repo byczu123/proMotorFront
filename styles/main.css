@@ -6,7 +6,7 @@
     font-family: 'Josefin Sans', sans-serif;
     max-width: 1920px;
     margin: 0 auto;
-    background-color: #2a2c2e;
+    background-color: white;
   
   }
   
@@ -109,23 +109,10 @@
     margin: 0.5em 0;
     }
   
-   /*  powinno działać a nie działa
-      .background{
-      background-image: url("../static/phone_bckground.jpg");
-      background-size: contain;
+   
       
-    } */
     
-    .logotype {
-    height: auto;
-    max-height: none;
-    }
-    
-    .logotype img {
-    transform: none;
-    max-width: 100%;
-    }
-    
+
     .about img{
     width: 80%;
     max-width: 100%;
@@ -136,12 +123,9 @@
       width: 100%;
     }
 
-    .article-details img{
-      display:inline-block;
-      width: 70%;
-    }
-    .articles p img{
-      display: block;
-      width: auto;
-    }
+
+
+    
+
+    
   }

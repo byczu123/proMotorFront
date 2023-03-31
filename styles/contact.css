@@ -24,6 +24,7 @@
   max-height: 500px;
   max-width: 1075px;
   min-height: 412px;
+  cursor: default;
 
 }
 .contact_container h1{
@@ -39,4 +40,13 @@
 
 .fb {
   text-align: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+.contact_container{
+  max-height: fit-content;
+}
 }

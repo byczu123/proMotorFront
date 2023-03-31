@@ -1,7 +1,5 @@
 .logotype {
-  background-image: url("../static/image.png");
   background-repeat: no-repeat;
-  background-color: #202529;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +22,7 @@
   justify-content: center;
   vertical-align: middle;
   width: 1920;
-  height: auto;
+  max-height: 600px;
 }
 .about_container{
   background-color: #202529;
@@ -122,16 +120,13 @@
   margin: 0.5em 0;
   }
 
- /*  powinno działać a nie działa
-    .background{
-    background-image: url("../static/phone_bckground.jpg");
-    background-size: contain;
-    
-  } */
+ 
   
   .logotype {
   height: auto;
   max-height: none;
+  background-color: #fff;
+  padding: 12px;
   }
   
   .logotype img {
